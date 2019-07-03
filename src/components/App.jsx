@@ -1,14 +1,13 @@
-import React from 'react';
-import Test from './Test.jsx';
+import React, { useState } from 'react';
 
-
-const App = (props) => {
+const App = props => {
+  const [text, setText] = useState('');
   const {} = props;
 
   return (
     <div>
       Welcome to my autocomplete project
-      <Test />
+      <input type="text" placeholder="type here" value={text} onChange={e => setText(e.target.value)} />
     </div>
   );
 };
