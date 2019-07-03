@@ -1,13 +1,10 @@
 import React from 'react';
 
-type Props = {};
-
-const Test = (props: Props) => {
+const Test = (props) => {
   const {} = props;
 
   return (
     <div>
-      <button />
     </div>
   );
 };

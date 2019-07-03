@@ -1,16 +1,16 @@
 import React from 'react';
-import Test from './Test.tsx';
+import Test from './Test.jsx';
 
-type Props = {};
 
-const App = (props: Props) => {
+const App = (props) => {
   const {} = props;
 
   return (
     <div>
+      Welcome to my autocomplete project
       <Test />
-      <button />
     </div>
   );
 };
+
 export default App;
