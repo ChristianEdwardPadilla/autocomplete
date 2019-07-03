@@ -21,11 +21,11 @@ class Trie {
     for (let i = 0; i < str.length; i++) {
       const char = str[i];
       const charCode = str.charCodeAt(i);
-      let child = root.children[charCode];
+      let child = root.children[charCode - 96];
 
       if (!child) {
         child = new Node(char);
-        root.children[charCode] = child;
+        root.children[charCode - 97] = child;
       }
       root = child;
     }
